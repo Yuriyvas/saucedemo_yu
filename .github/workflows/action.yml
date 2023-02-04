@@ -1,10 +1,10 @@
 name: selenium_test
 on: [push, pull_request]
 
-#permissions:
-#  checks: write
-#  pull-requests: write
-#  contents: read
+permissions:
+  checks: write
+  pull-requests: write
+  contents: read
 
 jobs:
   selenium_test:
