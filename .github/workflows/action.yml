@@ -1,6 +1,6 @@
 name: Yu test simple
 run-name: Any name
-on: [push, pull request]
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
