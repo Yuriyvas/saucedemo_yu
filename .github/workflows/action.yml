@@ -16,5 +16,5 @@ jobs:
           installer-parallel: true
 
       - name: Run test
-        run: pytest
+        run: poetry add pytest
             
