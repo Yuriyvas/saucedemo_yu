@@ -15,7 +15,7 @@ jobs:
           virtualenvs-in-project: true
           installer-parallel: true
       - name: Install project
-        run: poetry install --no-interaction
+        run: poetry install
       - name: Run test
         run: pytest
             
