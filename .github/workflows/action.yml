@@ -16,4 +16,5 @@ jobs:
           installer-parallel: true
       - name: Run tests
         run: |
-          pytest tests
+          source .venv/bin/activate
+          pytest tests/ --junitxml --headless
