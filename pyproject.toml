@@ -1,13 +1,18 @@
 [tool.poetry]
 name = "saucedemo-yu"
-version = "0.1.0"
-description = ""
+version = "0.0.1"
+description = "stady"
 authors = ["Yuriyvas <yuriy.vassiliev2010@gmail.com>"]
 readme = "README.md"
 packages = [{include = "saucedemo_yu"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.10.2"
+pytest = "^7.2.1"
+selenium = "^4.8.0"
+webdriver-manager = "^3.8.5"
+black = "^23.1.0"
+flake8 = "^6.0.0"
 
 
 [build-system]
