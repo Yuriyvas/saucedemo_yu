@@ -1,10 +1,10 @@
 name: selenium_test
 on: [push, pull_request]
 
-permissions:
-  checks: write
-  pull-requests: write
-  contents: read
+#permissions:
+#  checks: write
+#  pull-requests: write
+#  contents: read
 
 jobs:
   selenium_test:
@@ -66,9 +66,9 @@ jobs:
       #----------------------------------------------
       # install dependencies if cache does not exist
       #----------------------------------------------
-      - name: Install dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: poetry install --no-interaction --no-root
+#      - name: Install dependencies
+#        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+#        run: poetry install --no-interaction --no-root
       #----------------------------------------------
       # install your root project, if required
       #----------------------------------------------
@@ -79,7 +79,7 @@ jobs:
       #----------------------------------------------
       - name: Run tests
         run: |
-          source .venv/bin/activate
+#          source .venv/bin/activate
           pytest tests/ --junitxml report.xml --headless
       - name: Create test summary
         uses: test-summary/action@v2.0
@@ -99,4 +99,4 @@ jobs:
         if: failure()
         with:
           name: report
-          path: /home/runner/work/saucedemo_yu/saucedemo_yu/report/
+          path: /home/runner/work/saucedemo_yu/report/
