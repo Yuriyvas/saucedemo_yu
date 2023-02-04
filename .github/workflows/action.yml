@@ -15,8 +15,17 @@ jobs:
           virtualenvs-in-project: true
           installer-parallel: true
       - name: Run tests
-        uses: dariocurr/pytest-summary@main
+        run: |
+          source .venv/bin/activate
+          pytest tests/ --junitxml report.xml --headless
+      - name: Create test summary
+        uses: test-summary/action@v2.0
         with:
-          paths: |
-            test_check.py
+          paths: report.xml
+        if: always()
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          junit_files: "report.xml"
             
