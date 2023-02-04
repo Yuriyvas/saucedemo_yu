@@ -5,5 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Python
+        uses: actions/setup-python@v4.5.0
+
       - name: Poetry Install
         uses: knowsuchagency/poetry-install@v2
