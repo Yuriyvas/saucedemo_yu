@@ -8,6 +8,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
 
-      - name: Poetry setup
-        uses: ClementWalter/poetry-action@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: SG60/setup-poetry@v1
+      - run: poetry install          # you can use poetry now!
 
