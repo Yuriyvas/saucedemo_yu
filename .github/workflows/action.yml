@@ -15,26 +15,6 @@ jobs:
       - name: Poetry install
         run: poetry install
       - name: Run tests
-        run: |
-          source .venv/bin/activate
-          pytest tests/ --junitxml report.xml --headless
-      - name: Create test summary
-        uses: test-summary/action@v2.0
-        with:
-          paths: report.xml
-        if: always()
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        with:
-          junit_files: "report.xml"
-      #----------------------------------------------
-      #              save report for download
-      #----------------------------------------------
-      - name: Upload report using artifacts
-        uses: actions/upload-artifact@v3
-        if: failure()
-        with:
-          name: report
-          path: /home/runner/work/Saucedemo_Yu/Saucedemo_Yu/report/
+        run: poetry run pytest
+
             
