@@ -4,7 +4,7 @@ version = "0.0.1"
 description = "stady"
 authors = ["Yuriyvas <yuriy.vassiliev2010@gmail.com>"]
 readme = "README.md"
-packages = [{include = "saucedemo_yu"}]
+
 
 [tool.poetry.dependencies]
 python = "^3.10.2"
