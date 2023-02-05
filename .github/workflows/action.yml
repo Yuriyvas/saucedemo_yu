@@ -16,15 +16,9 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: true
           installer-parallel: true
-      - name: Load cached venv
-        id: cached-poetry-dependencies
-        uses: actions/cache@v3
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+      - name: Poetry install
+        run: poetry install
       - name: Run tests
-        run: |
-          source .venv/bin/activate
-          pytest tests/ --junitxml report.xml --headless
+        run: poetry run pytest
 
             
