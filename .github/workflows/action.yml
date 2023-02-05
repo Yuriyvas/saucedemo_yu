@@ -23,8 +23,6 @@ jobs:
           path: .venv
           key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
       - name: Run tests
-        run: |
-          source .venv/bin/activate
-          pytest tests/ --junitxml report.xml --headless
+        run: poetry run pytest
 
             
