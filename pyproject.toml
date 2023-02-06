@@ -13,6 +13,9 @@ selenium = "^4.8.0"
 webdriver-manager = "^3.8.5"
 black = "^23.1.0"
 flake8 = "^6.0.0"
+allure-pytest = "^2.12.0"
+allure-python-commons = "^2.12.0"
+pytest-allure-adaptor2 = "^1.8.2"
 
 
 [build-system]
