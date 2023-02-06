@@ -1,5 +1,5 @@
-name: Yu test simple
-run-name: Any name
+name: Sausedemo_Yu
+run-name: I'm happy
 on: [push]
 jobs:
   Explore-GitHub-Actions:
@@ -15,8 +15,8 @@ jobs:
           python-root-list: ""
           use-pylint: false
           use-pycodestyle: false
-          use-flake8: false
-          use-black: false
+          use-flake8: True
+          use-black: True
           use-mypy: false
           use-isort: false
           extra-pylint-options: ""
@@ -32,8 +32,6 @@ jobs:
         uses: snok/install-poetry@v1
       - name: Poetry install
         run: poetry install
-      - name: Allure report
-        uses: afiore/action-allure-report@v0.1.0
       - name: Run tests
         run: poetry run pytest
 
