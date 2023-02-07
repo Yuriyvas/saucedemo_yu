@@ -2,7 +2,7 @@ import pytest
 
 
 def test_success():
-    """this test succeeds """
+    """this test succeeds  """
     assert True
 
 
