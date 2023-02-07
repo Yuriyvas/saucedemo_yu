@@ -34,6 +34,7 @@ jobs:
         run: poetry install
       - name: Run tests
         run: poetry run pytest
+
       - name: Test with pytest and generate allure report
         run: |
             pytest tests --alluredir=allure-results
