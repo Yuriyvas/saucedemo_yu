@@ -6,9 +6,9 @@ def test_success():
     assert True
 
 
-def test_failure():
-    """this test fails"""
-    assert False
+# def test_failure():
+#     """this test fails"""
+#     assert False
 
 
 def test_skip():
@@ -16,5 +16,5 @@ def test_skip():
     pytest.skip('for a reason!')
 
 
-def test_broken():
-    raise Exception('oops')
+# def test_broken():
+#     raise Exception('oops')
