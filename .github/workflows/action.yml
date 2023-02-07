@@ -1,6 +1,12 @@
 name: Sausedemo_Yu
 run-name: I'm happy
 on: [push]
+
+permissions:
+  checks: write
+  pull-requests: write
+  contents: write
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
