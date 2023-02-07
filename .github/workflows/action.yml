@@ -61,7 +61,7 @@ jobs:
           allure_results: allure-results
           allure_history: allure-history
 
-      - name: Deploy report to Github  Pages
+      - name: Deploy report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
