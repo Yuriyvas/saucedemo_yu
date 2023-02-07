@@ -38,7 +38,7 @@ jobs:
       - name: Test with pytest and generate allure report
         run: |
             pytest tests --alluredir=allure-results
-          continue-on-error: true
+        continue-on-error: true
 
       - name: Get Allure history
         uses: actions/checkout@v2
