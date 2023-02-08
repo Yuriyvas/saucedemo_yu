@@ -38,8 +38,8 @@ jobs:
         uses: snok/install-poetry@v1
       - name: Poetry install
         run: poetry install
-      - name: Run tests
-        run: poetry run pytest
+#      - name: Run tests
+#        run: poetry run pytest
 
       - name: Test with pytest and generate allure report
         run: |
