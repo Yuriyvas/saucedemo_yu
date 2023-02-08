@@ -39,7 +39,7 @@ jobs:
       - name: Poetry install
         run: poetry install
       - name: Run tests
-        run: poetry add allure-pytest
+        run: poetry add pytest
 
       - name: Test with pytest and generate allure report
         run: |
