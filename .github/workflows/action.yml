@@ -1,6 +1,7 @@
 name: Sausedemo_Yu
 run-name: I'm happy
 on: [push]
+branches: [ main ]
 
 permissions:
   checks: write
