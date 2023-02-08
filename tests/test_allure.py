@@ -11,9 +11,9 @@ def test_success():
 #     assert False
 
 
-def test_skip():
-    """this test is skipped"""
-    pytest.skip('for a reason!')
+# def test_skip():
+#     """this test is skipped"""
+#     pytest.skip('for a reason!')
 
 
 # def test_broken():
