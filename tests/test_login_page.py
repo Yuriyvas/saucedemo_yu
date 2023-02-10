@@ -8,8 +8,8 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
-# my first selenium test
 
+# my first selenium test
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get(conf.URL)
 
