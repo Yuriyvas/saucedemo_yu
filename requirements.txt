@@ -1,5 +1,6 @@
 requests
 pytest
-Faker
 allure-pytest
 pylint
+selenium
+webdriver.manager
