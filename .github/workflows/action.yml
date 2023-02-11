@@ -25,12 +25,12 @@ jobs:
     #----------------------------------------------
     #  -----  install browsers  -----
     #----------------------------------------------
-    - name: Install Chrome
-      uses: browser-actions/setup-chrome@latest
-    - name: Install Firefox
-      uses: riccione/setup_firefox@v1
-    - name: Check Chromium version
-      run: chromium-browser --version
+#    - name: Install Chrome
+#      uses: browser-actions/setup-chrome@latest
+#    - name: Install Firefox
+#      uses: riccione/setup_firefox@v1
+#    - name: Check Chromium version
+#      run: chromium-browser --version
 
     - name: Install dependencies
       run: |

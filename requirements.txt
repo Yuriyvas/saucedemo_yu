@@ -4,3 +4,4 @@ allure-pytest
 pylint
 selenium
 webdriver.manager
+
