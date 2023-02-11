@@ -5,11 +5,11 @@ import time
 import allure
 from allure_commons.types import AttachmentType
 from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
 # my first selenium test
-driver = webdriver.Firefox(GeckoDriverManager.install())
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get(conf.URL)
 
 
