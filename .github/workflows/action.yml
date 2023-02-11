@@ -22,9 +22,15 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-    - name: Setup Chrome
-      uses: browser-actions/setup-chrome@v1.0.1
-
+    #----------------------------------------------
+    #  -----  install browsers  -----
+    #----------------------------------------------
+    - name: Install Chrome
+      uses: browser-actions/setup-chrome@latest
+    - name: Install Firefox
+      uses: riccione/setup_firefox@v1
+    - name: Check Chromium version
+      run: chromium-browser --version
 
     - name: Install dependencies
       run: |
