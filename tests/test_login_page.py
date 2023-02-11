@@ -8,11 +8,12 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
 
 # my first selenium test
-driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
-# service = webdriver.Chrome(executable_path=ChromeDriverManager().install())
-# driver = webdriver.Chrome(service=service)
+# driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+service = Service(executable_path=ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service)
 driver.get(conf.URL)
 
 
