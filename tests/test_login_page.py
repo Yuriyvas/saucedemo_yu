@@ -4,16 +4,25 @@ import conf
 import time
 import allure
 from allure_commons.types import AttachmentType
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+# from selenium import webdriver
+# from webdriver_manager.chrome import ChromeDriverManager
+# from webdriver_manager.firefox import GeckoDriverManager
 
 from selenium.webdriver.common.by import By
+# from selenium.webdriver.chrome.service import Service
+from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+# driver.get("https://www.google.com")
 
 # my first selenium test
 # driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
-service = Service(executable_path=ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
+# service = Service(executable_path=ChromeDriverManager().install())
+# driver = webdriver.Chrome(service=service)
+# driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+
 driver.get(conf.URL)
 
 
