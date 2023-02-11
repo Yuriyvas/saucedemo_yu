@@ -8,21 +8,22 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
-
 # my first selenium test
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get(conf.URL)
 
+
 def test_login_page():
-    link_site = driver.get(conf.URL)
+    driver.get(conf.URL)
     assert conf.URL
+
 
 def test_title():
     title_from_site = driver.title
     assert title_from_site == conf.TITLE
 
-def test_login_form():
 
+def test_login_form():
     input_user_name = driver.find_element(By.ID, 'user-name')
     input_user_name.send_keys('standard_user')
     time.sleep(5)
@@ -42,6 +43,3 @@ def test_login_form():
     with allure.step('Жмём на кнопку "LOGIN" и' + ' ' + 'делаем скриншот'):
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
     assert driver.current_url == 'https://www.saucedemo.com/inventory.html', 'We are reached another site'
-
-
-
