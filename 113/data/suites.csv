@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Feb 13 11:48:00 GMT 2023","Mon Feb 13 11:48:01 GMT 2023","833","tests","test_headless","TestPageSearch","","","test_yandex_search",""
+"failed","Mon Feb 13 11:48:01 GMT 2023","Mon Feb 13 11:48:13 GMT 2023","11276","tests","test_headless","TestPageSearch","","","test_mail_search",""
+"passed","Mon Feb 13 11:47:59 GMT 2023","Mon Feb 13 11:48:00 GMT 2023","1262","tests","test_headless","TestPageSearch","","","test_google_search",""
