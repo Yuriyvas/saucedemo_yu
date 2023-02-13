@@ -1,12 +1,7 @@
 import allure
 # import time
 from allure_commons.types import AttachmentType
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
-
-options = Options()
-options.headless = True
-driver = webdriver.Firefox(options=options)
+from pages.page_headless import driver
 
 
 class TestPageSearch:
