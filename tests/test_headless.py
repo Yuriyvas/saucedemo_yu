@@ -1,31 +1,41 @@
+import allure
+# import time
+from allure_commons.types import AttachmentType
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 
-
-# instance of Options class allows
-# us to configure Headless Chrome
 options = Options()
-options.add_argument('--headless')
-
-# this parameter tells Chrome that
-# it should be run without UI (Headless)
-# options.headless = True
-
-# initializing webdriver for Chrome with our options
-driver = webdriver.Chrome(options=options)
-
-# getting GeekForGeeks webpage
-driver.get('https://www.geeksforgeeks.org')
-
-# assert driver.title == ('GeeksforGeeks | A computer science portal for geeks')
+options.headless = True
+driver = webdriver.Firefox(options=options)
 
 
-# We can also get some information
-# about page in browser.
-# So let's output webpage title into
-# terminal to be sure that the browser
-# is actually running.
-print(driver.title)
-driver.close()
-# close browser after our manipulations
+class TestPageSearch:
+    def setup(self):
+        self.driver = driver
 
+    # def teardown(self):
+    #     self.driver.quit()
+
+    @allure.feature('Open pages')
+    @allure.story('Открывает страницу "google.com"')
+    def test_google_search(self):
+        self.driver.get('https://google.com')
+        with allure.step('делаем скриншот'):
+            allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+        assert self.driver.title == 'Google'
+
+    @allure.feature('Open pages')
+    @allure.story('Открывает страницу "https://www.saucedemo.com/')
+    def test_yandex_search(self):
+        self.driver.get('https://www.saucedemo.com/')
+        with allure.step('делаем скриншот'):
+            allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+        assert self.driver.title == 'Swag Labs'
+
+    @allure.feature('Open pages')
+    @allure.story('Открывает страницу "mail.ru"')
+    def test_mail_search(self):
+        self.driver.get('https://mail.ru')
+        with allure.step('делаем скриншот'):
+            allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+        assert self.driver.title == 'Mail.ru'
