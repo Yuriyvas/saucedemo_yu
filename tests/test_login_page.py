@@ -13,11 +13,15 @@ driver.get(conf.URL)
 
 def test_login_page():
     driver.get(conf.URL)
+    with allure.step('Открываем и' + ' ' + 'делаем скриншот'):
+        allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
     assert conf.URL
 
 
 def test_title():
     title_from_site = driver.title
+    with allure.step('Проверяем TITLE и' + ' ' + 'делаем скриншот'):
+        allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
     assert title_from_site == conf.TITLE
 
 
