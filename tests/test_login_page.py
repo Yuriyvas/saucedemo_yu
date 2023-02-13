@@ -1,3 +1,5 @@
+from selenium.webdriver.firefox.webdriver import WebDriver
+
 import pages.login_page.login_page
 import pages.login_page.login_page_locators
 import conf
@@ -14,14 +16,17 @@ from selenium import webdriver
 # from selenium.webdriver.chrome.service import Service
 # from webdriver_manager.chrome import ChromeDriverManager
 # from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.webdriver import WebDriver
-from selenium.webdriver.chrome.options import Options
-
+# from selenium.webdriver.chrome.webdriver import WebDriver
+# from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 
 options = Options()
-options.add_argument('--headless')
+# options.add_argument('--headless')
+# options.headless = True
+# driver = webdriver.Chrome(options=options)
+
 options.headless = True
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Firefox(options=options)
 
 driver = WebDriver()
 
