@@ -29,7 +29,7 @@ def test_login_form():
     input_user_name = driver.find_element(By.ID, 'user-name')
     input_user_name.send_keys('standard_user')
     time.sleep(5)
-    with allure.step('Вводим логин и' + ' ' + 'делаем скриншот'):
+    with allure.step('Вводим логин и делаем скриншот'):
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
 
     input_user_password = driver.find_element(By.ID, 'password')
