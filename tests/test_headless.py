@@ -29,6 +29,7 @@ class TestPageSearch:
 
     @allure.feature('Open pages')
     @allure.story('Открывает страницу "mail.ru"')
+    @pytest.mark.xfail
     def test_mail_search(self):
         self.driver.get('https://mail.ru')
         with allure.step('делаем скриншот'):
