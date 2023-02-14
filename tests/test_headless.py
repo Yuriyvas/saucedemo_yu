@@ -6,7 +6,7 @@ from pages.page_headless import driver
 
 
 class TestPageSearch:
-    def setup(self):
+    def setup_method(self):
         self.driver = driver
 
     # def teardown(self):
