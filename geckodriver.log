@@ -22,8 +22,8 @@ WebDriver BiDi listening on ws://127.0.0.1:55179
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofile7Ej7yU\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:55179/devtools/browser/31c98580-f818-4d20-81a5-71536a9c9647
-1676373542016	geckodriver	INFO	Listening on 127.0.0.1:55287
-1676373545071	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5528 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileA5rod8"
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\Master\AppData\Local\Temp\rust_mozprofile7Ej7yU\thumbnails) because it does not exist
+ugging-port" "5528 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileA5rod8"
 *** You are running in headless mode.
 1676373546163	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
@@ -34,8 +34,8 @@ WebDriver BiDi listening on ws://127.0.0.1:55288
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileA5rod8\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:55288/devtools/browser/a8d4a5bd-fd53-43e9-b0df-df4e86f4831a
-1676373712564	geckodriver	INFO	Listening on 127.0.0.1:55436
-1676373715627	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5543 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileVfBNNU"
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\Master\AppData\Local\Temp\rust_mozprofileA5rod8\thumbnails) because it does not exist
+ugging-port" "5543 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileVfBNNU"
 *** You are running in headless mode.
 1676373716761	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
@@ -46,8 +46,8 @@ WebDriver BiDi listening on ws://127.0.0.1:55437
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileVfBNNU\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:55437/devtools/browser/302eb4f0-5b09-446d-aed4-6398aa065200
-1676373813338	geckodriver	INFO	Listening on 127.0.0.1:55610
-1676373816395	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5561 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileQg2Cuk"
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\Master\AppData\Local\Temp\rust_mozprofileVfBNNU\thumbnails) because it does not exist
+ugging-port" "5561 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileQg2Cuk"
 *** You are running in headless mode.
 1676373817982	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
@@ -58,8 +58,8 @@ WebDriver BiDi listening on ws://127.0.0.1:55611
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileQg2Cuk\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:55611/devtools/browser/2c7eae31-e255-45c7-bfac-e06415f66bcd
-1676374056575	geckodriver	INFO	Listening on 127.0.0.1:55814
-1676374059645	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5581 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileDSNzAw"
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\Master\AppData\Local\Temp\rust_mozprofileQg2Cuk\thumbnails) because it does not exist
+ugging-port" "5581 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileDSNzAw"
 *** You are running in headless mode.
 1676374060832	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
@@ -157,3 +157,17 @@ WebDriver BiDi listening on ws://127.0.0.1:57072
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofileWxPNRL\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:57072/devtools/browser/52bb0f2a-ee0f-4637-a059-6a27d2549114
+1676377803059	geckodriver	INFO	Listening on 127.0.0.1:59055
+1676377806192	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5905 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofile1JU9fl"
+*** You are running in headless mode.
+1676377807485	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676377807499	Marionette	INFO	Listening on port 59077
+Read port: 59077
+WebDriver BiDi listening on ws://127.0.0.1:59056
+1676377807878	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Master\\AppData\\Local\\Temp\\rust_mozprofile1JU9fl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59056/devtools/browser/6194378b-2aa3-4765-8cf4-2e160c156b2d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
